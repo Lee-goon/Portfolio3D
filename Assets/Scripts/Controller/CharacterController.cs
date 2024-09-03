@@ -386,7 +386,7 @@ public class CharacterController : MonoBehaviour
 
             float distance = Vector3.Distance(this.transform.position, Vector3.forward);
 
-            rigid.AddForce(modelCameraArm.transform.forward * distance, ForceMode.VelocityChange);
+            rigid.AddForce(modelCameraArm.transform.forward * distance * 5f, ForceMode.VelocityChange);
 
         }
 
